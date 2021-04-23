@@ -11,6 +11,11 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         .tm-social {
             width: 50px;
             height: 50px;
@@ -25,7 +30,8 @@
 
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand nav-link" href="#"><img src="asset/img/beer.png" width="30" height="30"  class="d-inline-block align-top" alt="">
+        <a class="navbar-brand nav-link" href="#"><img src="asset/img/beer.png" width="30" height="30"
+                class="d-inline-block align-top" alt="">
             Ravenabar<span class="sr-only">(Página atual)</span></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -63,7 +69,7 @@
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <input class="form-control mr-sm-2 " type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
             </form>
         </div>
@@ -211,7 +217,7 @@
 
             </div>
             <div class="col-md-6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bVvDnEbxF2w"
+                <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/bVvDnEbxF2w"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -219,8 +225,52 @@
 
         </div>
         <!--/Video-->
-    </div>
+        <!--  </div> fim do container-->
 
+        <!--Formulario-->
+
+        <!--<div class="container">-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row d-flex align-items-center">
+                    <div class="col">
+                        <h2 class="text-center">Reservas</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="inputNome">Nome</label>
+                                <input type="text" class="form-control" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputData">Data</label>
+                                <input type="date" class="form-control" id="inputData">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Comentario</label>
+                                <textarea class="form-control" id="Assunto" rows="4"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn-primary">Enviar</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <iframe class="w-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.959822934264!2d-73.97030188626785!3d40.77466270842881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a29d3847f5%3A0x564dfbba0141774a!2s5th%20Ave%2C%20New%20York%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1619191729345!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <!--</div>-->
+        <!--/Formulario-->
+    </div>
 
     <!--Footer-->
     <hr>
@@ -229,8 +279,8 @@
             <ul class="col-md-12 d-flex justify-content-center">
                 <a href="#" target="_blank" class="p-3 text-dark">Cardápio</a>
                 <a href="#" target="_blank" class="p-3 text-dark">Reservas</a>
-                <a href="#"  class="p-3 text-dark">Contato</a>
-                <a href="#"  class="p-3 text-dark">Localização</a>
+                <a href="#" class="p-3 text-dark">Contato</a>
+                <a href="#" class="p-3 text-dark">Localização</a>
             </ul>
         </div>
 
@@ -261,6 +311,7 @@
 
     </footer>
     <!--/Footer-->
+    <script src="asset/js/script.js"></script>
 
 
     <!-- JavaScript (Opcional) -->
