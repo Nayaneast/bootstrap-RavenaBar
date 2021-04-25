@@ -183,17 +183,17 @@
             </div>
             <div class="card p-3 text-right">
                 <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <p>Lugar perfeito para fazer aquele Happy hour!</p>
                     <footer class="blockquote-footer">
                         <small class="text-muted">
-                            Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+                            Nelson Jr<cite title="Título da fonte">- FolhadeSP</cite>
                         </small>
                     </footer>
                 </blockquote>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Título do card</h5>
+                    <h5 class="card-title"> 5° Melhor Bar de SP</h5>
                     <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma
                         introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para
                         mostrar a altura igual, em ação.</p>
@@ -242,23 +242,29 @@
                         <form>
                             <div class="form-group">
                                 <label for="inputNome">Nome</label>
-                                <input type="text" class="form-control" placeholder="Nome">
+                                <input type="text" class="form-control" id="inputNome" onkeyup='validaNome()'
+                                    placeholder="Nome">
+                                <div id='txtNome'></div>
                             </div>
                             <div class="form-group">
                                 <label for="inputEmail">Email</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                <input type="email" class="form-control" id="inputEmail" onkeyup='validaEmail()'
+                                    placeholder="Email">
+                                <div id="txtEmail"></div>
                             </div>
                             <div class="form-group">
                                 <label for="inputData">Data</label>
-                                <input type="date" class="form-control" id="inputData">
+                                <input type="date" required class="form-control" id="inputData">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Comentario</label>
-                                <textarea class="form-control" id="Assunto" rows="4"></textarea>
+                                <label for="assunto">Assunto</label>
+                                <textarea class="form-control" id="assunto" rows="4"
+                                    onkeyup='validaAssunto()'></textarea>
+                                <div id="txtAssunto"></div>
                             </div>
 
                             <div class="form-group">
-                                <button class="btn btn-primary">Enviar</button>
+                                <button class="btn btn-primary" onclick="enviar()">Enviar</button>
                             </div>
 
                         </form>
@@ -268,8 +274,9 @@
             </div>
             <div class="col-md-6">
                 <iframe class="w-100"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.959822934264!2d-73.97030188626785!3d40.77466270842881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a29d3847f5%3A0x564dfbba0141774a!2s5th%20Ave%2C%20New%20York%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1619191729345!5m2!1spt-BR!2sbr"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.6417116266502!2d-46.69124719946614!3d-23.558262198646258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5797f5c05b35%3A0xb19ffa700777a8af!2sR.%20Aspicuelta%20-%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1619365143571!5m2!1spt-BR!2sbr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
             </div>
         </div>
         <!--</div>-->
